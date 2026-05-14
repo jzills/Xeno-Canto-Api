@@ -1,0 +1,47 @@
+{
+	"name": "xeno-canto-api",
+	"version": "0.0.1",
+	"keywords": [
+		"api",
+		"audio",
+		"birds",
+		"fluent",
+		"xeno-canto",
+		"xeno-canto-api",
+		"wildlife"
+	],
+	"main": "./dist/xeno-canto-api.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/xeno-canto-api.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/xeno-canto-api.cjs"
+			}
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && cp dist/index.d.ts dist/index.d.cts",
+		"test": "vitest test/unit --watch",
+		"test:integration": "vitest run --config vitest.integration.config.ts"
+	},
+	"author": "Joshua Zillwood",
+	"license": "MIT",
+	"description": "A Xeno Canto API v3 client library.",
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"vite": "^8.0.10",
+		"vite-plugin-dts": "^5.0.0",
+		"vite-tsconfig-paths": "^6.1.1",
+		"vitest": "^4.1.5"
+	}
+}

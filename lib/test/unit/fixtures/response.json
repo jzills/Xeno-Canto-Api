@@ -1,0 +1,60 @@
+{
+    "numRecordings": "1",
+    "numSpecies": "1",
+    "page": 1,
+    "numPages": 1,
+    "recordings": [
+        {
+            "id": "694038",
+            "gen": "Troglodytes",
+            "sp": "troglodytes",
+            "ssp": "",
+            "grp": "birds",
+            "en": "Eurasian Wren",
+            "rec": "Jacobo Ramil MIllarengo",
+            "cnt": "Spain",
+            "loc": "Sisalde, Ames, A Coruña, Galicia",
+            "lat": "42.8373",
+            "lon": "-8.652",
+            "alt": "30",
+            "type": "song",
+            "sex": "male",
+            "stage": "adult",
+            "method": "field recording",
+            "url": "//xeno-canto.org/694038",
+            "file": "//xeno-canto.org/694038/download",
+            "file-name": "XC694038-eurasian-wren.mp3",
+            "sono": {
+                "small": "//xeno-canto.org/sounds/spectrograms/694038/grey-small.png",
+                "med": "//xeno-canto.org/sounds/spectrograms/694038/grey-medium.png",
+                "large": "//xeno-canto.org/sounds/spectrograms/694038/colour.png",
+                "full": ""
+            },
+            "osci": {
+                "small": "",
+                "med": "",
+                "large": ""
+            },
+            "lic": "//creativecommons.org/licenses/by-nc-sa/4.0/",
+            "q": "A",
+            "length": "4:08",
+            "time": "09:30",
+            "date": "2021-12-23",
+            "uploaded": "2021-12-27",
+            "also": [
+                "Turdus viscivorus",
+                "Turdus iliacus",
+                "Parus major"
+            ],
+            "rmk": "A male repeating a stereotyped phrase.",
+            "animal-seen": "yes",
+            "playback-used": "no",
+            "temp": "",
+            "regnr": "",
+            "auto": "unknown",
+            "dvc": "",
+            "mic": "",
+            "smp": "44100"
+        }
+    ]
+}
