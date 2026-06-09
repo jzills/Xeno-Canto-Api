@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import XenoCanto from "../../src/xeno-canto";
+import XenoCanto, { XenoCantoError } from "../../src/xeno-canto";
 import XenoCantoRequestBuilder from "../../src/xeno-canto-request-builder";
 import { lastFetchUrl, lastFetchParams } from "./helpers";
 
@@ -37,8 +37,12 @@ describe("XenoCanto.search", () => {
     it("throws on error response", async () => {
         vi.mocked(fetch).mockResolvedValueOnce({
             ok: false,
+            status: 400,
             text: () => Promise.resolve("Bad request"),
         } as any);
-        await expect(xc.search(new XenoCantoRequestBuilder())).rejects.toThrow("Bad request");
+        const error = await xc.search(new XenoCantoRequestBuilder()).catch(e => e);
+        expect(error).toBeInstanceOf(XenoCantoError);
+        expect(error.status).toBe(400);
+        expect(error.message).toBe("Bad request");
     });
 });
