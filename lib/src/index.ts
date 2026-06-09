@@ -1,4 +1,4 @@
-export { default as XenoCanto } from "./xeno-canto";
+export { default as XenoCanto, XenoCantoError } from "./xeno-canto";
 export { default as XenoCantoRequestBuilder } from "./xeno-canto-request-builder";
 export { default as QueryBuilder } from "./builders/query-builder";
 export { default as FilterQueryBuilder } from "./builders/filter-query-builder";
