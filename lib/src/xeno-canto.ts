@@ -1,6 +1,13 @@
 import QueryBuilder from "./builders/query-builder";
 import { RecordingsResponse } from "./types/recordings-response";
 
+export class XenoCantoError extends Error {
+    constructor(readonly status: number, message: string) {
+        super(message);
+        this.name = "XenoCantoError";
+    }
+}
+
 export default class XenoCanto {
     readonly URL: string = "https://xeno-canto.org/api/3";
     readonly APIKey: string;
@@ -14,7 +21,7 @@ export default class XenoCanto {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error(await response.text());
+            throw new XenoCantoError(response.status, await response.text());
         }
     };
 }
