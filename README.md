@@ -1,4 +1,4 @@
-# Xeno-Canto-Api
+# xeno-canto-api
 
 [![NPM Version](https://img.shields.io/npm/v/xeno-canto-api)](https://www.npmjs.com/package/xeno-canto-api) [![NPM Downloads](https://img.shields.io/npm/d18m/xeno-canto-api)](https://www.npmjs.com/package/xeno-canto-api)
 
