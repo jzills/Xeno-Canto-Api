@@ -17,7 +17,7 @@ npm run test:integration # Run integration tests against the live API (requires 
 
 ### Builder pattern (mixin composition)
 
-The library uses Higher-Order Function (HOF) mixins to compose query builders — the same pattern used across the sibling Freesound-Api and InternetArchive-Api libraries.
+The library uses Higher-Order Function (HOF) mixins to compose query builders — the same pattern used across the sibling freesound-api and internet-archive-api libraries.
 
 ```
 FilterQueryBuilder (mixin)
